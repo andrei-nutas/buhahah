@@ -1,0 +1,13 @@
+{
+    "client_name": "Automation client name",
+    "client_type": "Enterprise",
+    "industry": "Digital & IT",
+    "presentation_deadline": "2025-03-28T00:00:00.000Z",
+    "project_types": [
+        "Engineering"
+    ],
+    "project_title": "AUT Test",
+    "prompt": "Test description",
+    "business_practice": "Cloud",
+    "business_vertical": "Financial Services"
+}
