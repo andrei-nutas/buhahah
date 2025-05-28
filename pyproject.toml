@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "nessgen-sales-api-testing"
+version = "0.1.0"
+description = "API tests related to Sales project"
+authors = ["Rucsandra Munteanu, rucsandra.munteanu@ness.com"]
+packages = [{ include = "api" }]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.13"
+boto3 = ">=1.37.20,<2.0.0"
+pytest = ">=8.3.5,<9.0.0"
+python-dotenv = ">=1.1.0,<2.0.0"
+playwright = ">=1.51.0,<2.0.0"
+pytest-playwright = "^0.7.0"
+importlib-resources = "^6.4.0"
+openpyxl = "^3.1.5"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+all-api-tests = "api.runner:run_all_api_tests"
+workflow = "api.runner:run_workflow_tests"
+non-workflow = "api.runner:run_non_workflow_tests"
