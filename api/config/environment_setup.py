@@ -11,4 +11,6 @@ assert COGNITO_USERNAME, "COGNITO_USERNAME is not set"
 COGNITO_PASSWORD = os.getenv("COGNITO_PASSWORD")
 assert COGNITO_PASSWORD, "COGNITO_PASSWORD is not set"
 
-BASE_URL = "https://salesstage.nessgen.net/api/v1/"
+raw_base_url = os.getenv("BASE_URL")
+assert raw_base_url, "BASE_URL is not set"
+BASE_URL = raw_base_url + "/api/v1/"
